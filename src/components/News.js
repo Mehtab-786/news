@@ -15,7 +15,7 @@ function useNewzHeadlines() {
         .then(res => res.json())
         .then((res) => {
           
-            if (res.status === "ok") {
+            if (res.status == "ok") {
               setData(res.articles);  // Set the articles array in state
               setLoading(false); // Set loading to false after response
               setError(null);  // Clear any previous errors
