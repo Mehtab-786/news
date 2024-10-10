@@ -5,8 +5,8 @@ import useNewzHeadlines from './components/News';
 function App() {
   const { data: newzHeadlines, loading, error } = useNewzHeadlines();  
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>{error}</div>;
+  if (loading) return <div className='text-3xl font-serif font-semibold'>Loading...</div>;
+  if (error) return <div className='text-3xl font-serif font-semibold'>{error}</div>;
 
 
   return (
